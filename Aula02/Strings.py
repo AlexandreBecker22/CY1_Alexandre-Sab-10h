@@ -1,3 +1,9 @@
+# char → salva um único carectere.
+# char[] → lista de caracteres, que podem formar palavras e frases.
+
+# 'variavel'[] → lista de informações (salvas na variavel).
+
+
 # Strings é um tipo de variável que armazena textos. Para utilizar uma string basta declarar uma variável e passar como valor o texto que deseja salvar entre '' ou ""
 
 texto = 'Ctrl+Play-  Escola de Programação e Robótica'
@@ -47,4 +53,36 @@ print(nome[-1]) # o
 print(nome[:-6]) # Pedro Paulo Sousa do
 
 # Para ir saltenado de caractere a caractere na quantidade desejada
-print(nome[::2])
+print(nome[::2])# PdoPuoSuad ot
+
+# strings são imutáveis, ou seja, não para mudar só uma parte dele com a função index. Para mudar a string vc tem que muda-la completamente.
+
+'''
+NÃO PODE
+nome[0] = F
+
+PODE
+nome = "Fedro Paulo Sousa do Couto"
+
+'''
+
+# É possível "somar" uma string a outra, ou seja, concatenação
+
+nome2 = 'Frederico'
+sobrenome2 = ' Cunha'
+
+print(nome2+sobrenome2)
+# É possível repetir uma string várias vezes 
+
+print((nome2+sobrenome2+' ')*10)
+
+# Para unir letras com numeros, usamos a função 'str()', que converte qualquer tipo de variável em string.(e para transformar variáveis em se usa 'int()').
+
+numeroDeIrmãos = 2
+print('Você tem dois '+str(numeroDeIrmãos)+' irmãos')
+
+# Outra forma de fazer isso é usar a vírgula ( que separa os itens).
+
+print('Você tem dois ', numeroDeIrmãos, ' irmãos')
+
+##
