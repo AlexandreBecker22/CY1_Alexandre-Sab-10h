@@ -26,5 +26,5 @@ def média_ponderada():
     else:
         return Totalnumm/(k+peso)
     
-média(a)
-média_ponderada(k)
+média()
+média_ponderada()
