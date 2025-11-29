@@ -1,0 +1,20 @@
+{
+    "alunos": [
+        {
+            "nome":"Pedro",
+            "nota": 59
+        },
+        {
+            "nome":"Lucas",
+            "nota": 61
+        },
+        {
+            "nome":"Costa",
+            "nota": 33
+        },
+        {
+            "nome":"Alê",
+            "nota": 100
+        }
+    ]
+}

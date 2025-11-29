@@ -39,7 +39,7 @@ def caminho_escuro():
 
 
 def vitória():
-     print('Parabéns você achou uma saída!|Vitória||Se quiser jogarnovamente basta reiniciar o programa|')
+     print('Parabéns você achou uma saída!|Vitória||Se quiser jogar novamente basta reiniciar o programa|')
 
 def derrota():
      print('Desculpe, você falhou.Mais sorte da próxima vez!|Derrota||Por favor reinicie o programa|')
