@@ -1,0 +1,36 @@
+/*  comentario  */
+
+
+#teste1111234
+{
+    background-color: green;
+    font-size:large;
+    color: white;
+    text-align: center;
+}
+/* ↑ só para que tiver esse id ↑ */
+
+p
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:brown;
+    text-align: center;
+
+}
+/* ↑↑↑ para todos os '<p>' (se ele e o id tiverem modificando a mesma coisa, no mesmo quesito, o id tem preferência) */
+
+#teste111123499
+{
+    background-color: green;
+    font-size:large;
+    color: white;
+    text-align: center;
+}
+
+.teste11112349966C2
+{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ↑ tipo um id mais para mais de um elemento ↑ */
