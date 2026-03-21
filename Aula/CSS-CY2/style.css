@@ -15,6 +15,7 @@ p
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:brown;
     text-align: center;
+    width: 150px;
 
 }
 /* ↑↑↑ para todos os '<p>' (se ele e o id tiverem modificando a mesma coisa, no mesmo quesito, o id tem preferência) */
@@ -34,3 +35,36 @@ p
     font-family: Arial, Helvetica, sans-serif;
 }
 /* ↑ tipo um id mais para mais de um elemento ↑ */
+
+
+/* ↓ porcentagem, é daquele padrão no item ou no texto */
+.exemplos
+{
+    width: 56%;
+    color:#ff0020;
+    font-style: italic;
+    border-top: #555555;
+    border-left: rgb(55,66,99);
+}
+
+div > b{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+}/* ↑↑↑ todos os <b> dentro de um <div> ↑↑↑*/
+
+.kklk:hover{
+    filter: grayscale(100%);
+    filter: opacity(70%);
+}/* ↑↑↑ funcionalidade ( hover → quando o mouse passa por cima */
+
+p::first-letter{
+    font-size: 160%;
+}/* ↑↑↑ modifica só a primeira letra ou outra parte, mas tem nomes especiais e precisa de um complemento/biblioteca pois não são nativos */
+
+i:hover{
+    filter: bluescale(100%);
+    opacity: 75%;
+    font-weight: 999;
+    opacity: 250%;
+    font-size: 150%;
+}
