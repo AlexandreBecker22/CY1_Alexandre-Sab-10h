@@ -1,0 +1,35 @@
+/* '*' → tudo */
+*{
+    margin: 0cm;
+    padding: 0cm;
+    font-family: fantasy;
+}
+
+#carac.princ.{
+    display: flex;
+    justify-content: space-around;
+}
+
+#atributos{}
+
+#meio{}
+
+#Ilustra{}
+
+#Bio{}
+
+#Eq{}
+
+#Ar{}
+
+.AR{
+    border: 2px solid black;
+}
+
+#f{
+    background-color: black;
+}
+
+#F{
+    color: white;
+}
