@@ -5,18 +5,59 @@
     font-family: fantasy;
 }
 
-#carac.princ.{
-    display: flex;
-    justify-content: space-around;
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
 }
 
-#atributos{}
+.cp{
+    border: 2px solid black;
+    width: 175px;
+    margin-top: 20px;
+}
 
-#meio{}
+#AMIB{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 100px;
+    gap: 20px;
+}
+
+MI{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#atributos{
+    border: 2px double black;
+    height: 400px;
+    width: 300px;
+}
+
+#meio{
+    border: 2px double black;
+    width: 600px;
+}
 
 #Ilustra{}
 
+#Il{
+    width: 600px;
+    height: 450px;
+    border: 2px dashed black;
+}
+
 #Bio{}
+
+#EA{
+    display: flex;
+    gap: 30px;
+    margin: 45px;
+}
 
 #Eq{}
 
@@ -24,7 +65,14 @@
 
 .AR{
     border: 2px solid black;
+    width: 650px;
 }
+
+.AR2{
+    border: 2px solid black;
+    width: 250px;
+}
+
 
 #f{
     background-color: black;

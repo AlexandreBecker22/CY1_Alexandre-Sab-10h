@@ -8,39 +8,39 @@
 </head>
 <body>
     <header>
-        <div id="carac.princ.">
-            <div><p>Nome do personagem</p>
+        
+            <div class="cp"><p>Nome do personagem</p>
                  <input type="text">
             </div>
-            <div><p>Nome do Jogador</p>
+            <div class="cp"><p>Nome do Jogador</p>
                  <input type="text">
             </div>
-            <div><p>Nível</p>
+            <div class="cp"><p>Nível</p>
                  <input type="number">
             </div>
-            <div><p>Raça</p>
+            <div class="cp"><p>Raça</p>
                  <input type="text">
             </div>
-            <div><p>Classe</p>
+            <div class="cp"><p>Classe</p>
                  <input type="text">
             </div>
-            <div><p>Tendência</p>
+            <div class="cp"><p>Tendência</p>
                 <input type="text">
             </div>
-            <div><p>Devoção</p>
+            <div class="cp"><p>Devoção</p>
                  <input type="text">
             </div>
-            <div><p>Altura</p>
+            <div class="cp"><p>Altura</p>
                  <input type="number">M
             </div>
-            <div><p>Peso</p>
+            <div class="cp"><p>Peso</p>
                  <input type="number">KG
             </div>
 
-        </div>
     </header>
     <main>
        <div>
+        <section id='AMIB'>
          <div id="atributos">
             <div><p>FOR:</p><input type="number"><br>Modificador de FOR:  +<input type="number"></div>
             <div><p>CONS:</p><input type="number"><br>Modificador de CONS:  +<input type="number"></div>
@@ -48,31 +48,38 @@
             <div><p>INT:</p><input type="number"><br>Modificador de INT:  +<input type="number"></div>
             <div><p>DES:</p><input type="number"><br>Modificador de DES:  +<input type="number"></div>
             <div><p>CAR:</p><input type="number"><br>Modificador de CAR:  +<input type="number"></div>
-        </div>
-        <div id="meio">
+         </div>
+         <section id="MI">
+          <div id="meio">
             Deslocamento: <input type="number">M <br>
             Dinheiro: <input type="number">PO; <input type="number">PP; <input type="number">PB.<p>(1PO=100PP;1PP=10PB;1PO=1000PB)</p>
 
-        </div>
-        <div id="Ilustra">
-            <p>Ilustração</p><input type="file">
-        </div>
-        <div id="Bio">
+          </div>
+          <div id="Ilustra">
+            <p>ilustração</p>
+            <div id="Il">
+              <input  type="file">
+            </div>
+          </div>
+        </section>
+         <div id="Bio">
             <p>Biografia do personagem:</p>
-            <textarea name="" cols="30" rows="25"></textarea>
-        </div>
-        </div>
-        <div>
-            <div id="Eq">
-                <p>Equipamentos:</p> <textarea name="" cols="40" rows="15"></textarea>
-            </div>
+            <textarea name="" cols="40" rows="30"></textarea>
+         </div>
+        </section>
+        
+        <div id="EA">
             <div id="Ar">
-                <div class="AR"><p>Armas 1:</p>Arma: <input type="text"><br>Dano: <input type="number">d4  Peso: <input type="number">KG   Alcance: <input type="number">M</div> <br>
-                <div class="AR"><p>Armas 2:</p>Arma: <input type="text"><br>Dano: <input type="number">d4  Peso: <input type="number">KG   Alcance: <input type="number">M</div> <br>
-                <div class="AR"><p>Armas 3:</p>Arma: <input type="text"><br>Dano: <input type="number">d4  Peso: <input type="number">KG   Alcance: <input type="number">M</div><br> 
-                <div class="AR">Escudo: <input type="text"> <br> Peso: <input type="number">KG</div><br>
-                <div class="AR">Armadura: <input type="text"><br> Peso: <input type="number">KG</div>
+                <div class="AR"><p>Armas 1:</p>Arma: <input type="text"><br>Dano: <input type="number">d4|  Peso: <input type="number">KG| Alcance: <input type="number">M</div> <br>
+                <div class="AR"><p>Armas 2:</p>Arma: <input type="text"><br>Dano: <input type="number">d4| Peso: <input type="number">KG|  Alcance: <input type="number">M</div> <br>
+                <div class="AR"><p>Armas 3:</p>Arma: <input type="text"><br>Dano: <input type="number">d4| Peso: <input type="number">KG|  Alcance: <input type="number">M</div><br> 
+                <div class="AR2">Escudo: <input type="text"> <br> Peso: <input type="number">KG</div><br>
+                <div class="AR2">Armadura: <input type="text"><br> Peso: <input type="number">KG</div>
             </div>
+            <div id="Eq">
+                <p>Equipamentos:</p> <textarea name="" cols="90" rows="15"></textarea>
+            </div>
+            
         </div>
     </main>
     <footer id="f">
