@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
     <section class="cad01">
             <div class="input01">
                 <input id="IP01" placeholder="Digite o nome da música buscada">
-                <input type="text" placeholder="Digite o nome da banda/cantor">
-                <input type="text" placeholder="Digite o tipo de música(exemplo:rock pop)">
+                <input type="text" placeholder="Digite o nome da banda/cantor" class="IP02">
+                <input type="text" placeholder="Digite o estilo de música(exemplo:rock pop)" class="IP03">
+                <input type="text" placeholder="Digite o link da música" id="link">
+                <label for="IMG01">ilustração</label>
+                <input type="file" name="" id="IMG01">
             </div>
             <div class="B01">
                 <button onclick="Cadastrar_Jogo()">Cadastrar música</button>
             </div>
-            <div class="B02"><button onclick="Remover_Elementos ()">Remover Música</button></div>
     </section>
     <section class="lista_de_música"></section>
     <script src="cadastro.js"></script>
