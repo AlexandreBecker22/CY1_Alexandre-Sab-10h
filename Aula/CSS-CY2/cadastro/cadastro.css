@@ -1,0 +1,62 @@
+.div01{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: gray; 
+    margin: 10px;
+    width: 300px;
+    height: 450px;
+}
+
+.div01-C{
+    gap: 30px;
+    padding: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#imgIMG01{
+    border: 0px solid black;
+    border-radius: 70px;
+    height: 100px;
+    width: 230px;
+    padding: 30px;
+}
+.h3h401{
+    margin-left: 100px;
+    margin-right: 50px;
+    width: 100px;
+    border: solid black 1px;
+    border-radius: 60px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+.img02{
+    width: 100px;
+    border: solid black;
+    border-radius: 50px;
+    border-color: burlywood ;
+    background-color: antiquewhite;
+
+
+}
+.headercadastro{
+    border: solid black;
+    background-color: rgb(109, 49, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.Menu{    
+    display: flex;
+    justify-content: center;
+    align-items: center;}

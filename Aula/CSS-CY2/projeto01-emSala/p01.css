@@ -4,7 +4,6 @@
     width: 150px;
     height: 225px;
     background-color: rgb(133, 101, 65);
-    margin-left: 555px;
 }
 #img01{
     width: 125px;
@@ -45,6 +44,10 @@
 .H{
     border: 2px solid black;
     background-color: rgba(248, 201, 83, 0.856);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .TxT01{
     display: flex;

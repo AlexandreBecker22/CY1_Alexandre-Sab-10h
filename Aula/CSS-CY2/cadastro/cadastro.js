@@ -12,14 +12,6 @@ let IMG01 = document.querySelector("#IMG01")
 let lista_de_música = document.querySelector(".lista_de_música");
 let musicas = [];
 
-const musica = (IP01, IP02, IP03, link, IMG01) => ({
-    IP01,
-    IP02,
-    IP03, 
-    link, 
-    IMG01
-
-})
 
 function Pegar_img() {
     const urlIMG = URL.createObjectURL(IMG01.files[0]);
@@ -56,18 +48,20 @@ function Cadastrar_Jogo() {
 }
 
 function Remover_Elementos(posicao_Array) {
+
    musicas.splice(posicao_Array,1);
+   console.log(musicas.length);
 
   for (let i = 0; i < musicas.length; i++) {
-        
-        const div = document.createElement("div")
-        div.classList.add("div01");
+        const div = document.createElement("div");
+        div.classList.add("div");
         div.innerHTML = `
+        <img class="div01-C" id="imgIMG01"src= "${musicas[i].IMG01}">
         <h3 class="h3h401" class="div01-C" id= "H3-01"> ${musicas[i].IP01}  </h3>
         <h4 class="h3h401" class="div01-C id= "H4-01"> ${musicas[i].IP02}  </h4>
         <h4 class="h3h401" class="div01-C id= "H4-02"> ${musicas[i].IP03}  </h4>
         <a class="h3h401" class="div01-C id="alink01" href="${musicas[i].link}"> Link da música </a>
-        <img class="div01-C" id="imgIMG01"src= "${musicas[i].IMG01}">
+        
         <button class="B02" onclick="Remover_Elementos(${i})">Remover Música</button>
         `
         lista_de_música.appendChild(div);
@@ -75,4 +69,13 @@ function Remover_Elementos(posicao_Array) {
     }
 
 }
+
+const musica = (IP01, IP02, IP03, link, IMG01) => ({
+    IP01,
+    IP02,
+    IP03, 
+    link, 
+    IMG01
+
+})
 
