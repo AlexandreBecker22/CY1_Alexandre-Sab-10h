@@ -9,12 +9,16 @@
 </head>
 <body>
     <header class="headercadastro">
-        <img class="img02" src="./../midias/image.png" alt="">
+        <!-- <img class="img02" src="./../midias/image.png" alt=""> -->
+        <div class="logo">
+            <img id="img01" src="./../midias/image.png" alt="">
+            <p class="Titulo01">...........Vinil.Music............</p>
+        </div>
 
         <div class="Menu">
             <ul class="ul01">
                 <li><a href="./../projeto01-emSala/p01.html">Home</a></li>
-                <li><a href="./../cadastro/cadastro.html">Cadastro</a></li>
+                <li><a href="./../cadastro/cadastro.html">Cadastro de músicas</a></li>
                 <li><a href="">Fale conosco(inoperante)</a></li>
             </ul>
         </div>
@@ -26,19 +30,46 @@
         <br>
         <br>
         <br>
-            <div class="input01">
+            <section class="input01">
+                <div class="inputss1">
+                <label class="label" for="IP01"><i>Insira o nome da música</i></label>
                 <input id="IP01" placeholder="Digite o nome da música buscada">
+                </div>
+                <div class="inputss1">
+                <label class="label" for="IP02"><i>Insira o nome do(s) autor(es)</i></label>
                 <input type="text" placeholder="Digite o nome da banda/cantor" class="IP02">
+                </div>
+                <div class="inputss1">
+                <label class="label" for="IP03"><i>Insira o estilo musical</i></label>
                 <input type="text" placeholder="Digite o estilo de música(exemplo:rock pop)" class="IP03">
+                </div>
+                <div class="inputss1">
+                <label class="label" for="link"><i>Insira um link de acesso</i></label>
                 <input type="text" placeholder="Digite o link da música" id="link">
-                <label for="IMG01">ilustração</label>
+                </div>
+                <div class="inputss1">
+                <label class="label" for="IMG01"><i>Insira uma imagem</i></label>
                 <input type="file" name="" id="IMG01">
-            </div>
-            <div class="B01">
-                <button onclick="Cadastrar_Jogo()">Cadastrar música</button>
+                </div>
+                <div class="inputss1">
+                <label class="label" for="audio001"><i>Insira um audio da música</i></label>
+                <input type="file" placeholder="insira um audio" class="audio001">
+                </div>
+            </section>
+            <div >
+                <button class="B01" class="input01" class="inputss1" onclick="Cadastrar_Jogo()"><i>Cadastrar música</i></button>
             </div>
     </section>
     <section class="lista_de_música"></section>
     <script src="cadastro.js"></script>
+
+<div class="div_filtro">
+<p>Filtre pelos estilos musicais!</p>
+<input type="text" id="texto_pesquisa" />
+<button id="limpar_filtro"> 
+Limpar filtro 
+</button>
+</div>
+
 </body>
 </html>

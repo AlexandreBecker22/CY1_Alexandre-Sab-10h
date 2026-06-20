@@ -11,6 +11,7 @@ let link = document.querySelector("#link")
 let IMG01 = document.querySelector("#IMG01")
 let lista_de_música = document.querySelector(".lista_de_música");
 let musicas = [];
+let audio01 = document.querySelector("audio001")
 
 
 function Pegar_img() {
@@ -34,11 +35,12 @@ function Cadastrar_Jogo() {
         const div = document.createElement("div")
         div.classList.add("div01");
         div.innerHTML = `
-        <h3 class="h3h401" class="div01-C" id= "H3-01"> ${musicas[i].IP01}  </h3>
+        <img class="div01-C" id="imgIMG01"src= "${musicas[i].IMG01}">
+        <h1 class="h3h401" class="div01-C" id= "H3-01"> ${musicas[i].IP01}  </h1>
         <h4 class="h3h401" class="div01-C id= "H4-01"> ${musicas[i].IP02}  </h4>
         <h4 class="h3h401" class="div01-C id= "H4-02"> ${musicas[i].IP03}  </h4>
         <a class="h3h401" class="div01-C id="alink01" href="${musicas[i].link}"> Link da música </a>
-        <img class="div01-C" id="imgIMG01"src= "${musicas[i].IMG01}">
+        <br>
         <button class="B02" onclick="Remover_Elementos(${i})">Remover Música</button>
         `
         lista_de_música.appendChild(div);
@@ -49,18 +51,21 @@ function Cadastrar_Jogo() {
 
 function Remover_Elementos(posicao_Array) {
 
-   musicas.splice(posicao_Array,1);
-   console.log(musicas.length);
+    musicas.splice(posicao_Array, 1);
+    lista_de_música.innerHTML="";
+
+    
 
   for (let i = 0; i < musicas.length; i++) {
         const div = document.createElement("div");
         div.classList.add("div");
         div.innerHTML = `
         <img class="div01-C" id="imgIMG01"src= "${musicas[i].IMG01}">
-        <h3 class="h3h401" class="div01-C" id= "H3-01"> ${musicas[i].IP01}  </h3>
+        <h1 class="h3h401" class="div01-C" id= "H3-01"> ${musicas[i].IP01}  </h1>
         <h4 class="h3h401" class="div01-C id= "H4-01"> ${musicas[i].IP02}  </h4>
         <h4 class="h3h401" class="div01-C id= "H4-02"> ${musicas[i].IP03}  </h4>
         <a class="h3h401" class="div01-C id="alink01" href="${musicas[i].link}"> Link da música </a>
+        <br>
         
         <button class="B02" onclick="Remover_Elementos(${i})">Remover Música</button>
         `

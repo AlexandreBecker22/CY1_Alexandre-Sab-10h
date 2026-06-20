@@ -1,36 +1,46 @@
 .div01{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     border: 2px solid black;
     border-radius: 50px;
     background-color: gray; 
-    margin: 10px;
-    width: 300px;
-    height: 450px;
+    width: 600px;
+    height: 650px;
+    margin: 20px;
+
+}
+h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
-.div01-C{
-    gap: 30px;
-    padding: 10px;
+
+
+/* .div01-C{
     font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+} */
 
 #imgIMG01{
     border: 0px solid black;
-    border-radius: 70px;
-    height: 100px;
-    width: 230px;
-    padding: 30px;
+    border-radius: 50px;
+    height: 200px;
+    width: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .h3h401{
     margin-left: 100px;
     margin-right: 50px;
-    width: 100px;
     border: solid black 1px;
     border-radius: 60px;
     padding: 5px;
@@ -39,11 +49,11 @@
 }
 
 .img02{
-    width: 100px;
-    border: solid black;
-    border-radius: 50px;
-    border-color: burlywood ;
-    background-color: antiquewhite;
+    width: 150px;
+    border: solid black 10px;
+    border-radius: 150px;
+    background-color: rgb(133, 101, 65);
+    height: 150px;
 
 
 }
@@ -60,3 +70,68 @@
     display: flex;
     justify-content: center;
     align-items: center;}
+
+.inputss1{
+    border: 2px double black;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(110, 64, 3, 0.596);
+}
+.cad01{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.B01{
+    width: 300px;
+    border: 2px dashed black;
+    border-radius: 100px;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.B01:hover{
+    width: 350px;
+    height: 25px;
+}
+i{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+    color: rgb(5, 5, 82);
+}
+input{
+    background-color: burlywood;
+    border-radius: 20px;
+    border: 1px dashed brown;
+}
+#IMG01{
+    background-color: burlywood;
+    border-radius: 20px;
+    border: 1px dashed brown;
+}
+#link{
+    background-color: burlywood;
+    border-radius: 20px;
+    border: 1px dashed brown;
+}
+
+.B02{
+    width: 300px;
+    border: 2px dashed white;
+    border-radius: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+    padding: 10px;
+}
