@@ -137,7 +137,8 @@ h4{
 }
 .B01:hover{
     width: 350px;
-    height: 25px;
+    height: 75px;
+    font-size: 25px;
 }
 i{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
@@ -192,7 +193,8 @@ input{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    width: 600px;
+    width: 800px;
+    /* height: 100px; */
 }
 .div_filtro input:hover::placeholder{
     color: whitesmoke;
@@ -202,4 +204,12 @@ input{
     scale: 1.5;
     color: whitesmoke;
 
+}
+
+.div_filtro > i{
+    font-size: 20px;
+}
+#limpar_filtro > i{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(5, 5, 82);
 }

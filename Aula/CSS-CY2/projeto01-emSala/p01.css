@@ -88,7 +88,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    border-top: none;
+    /* border-top: none; */
+    background-color: goldenrod;
 
 }
 
@@ -102,4 +103,93 @@ footer{
     flex-direction: row;
     border-top: 10px double black;
     width: 100%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carrossel_pai01{
+    background-color: chocolate;
+    border: 5px ridge brown;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carrossel_pai02{
+    border: 4px dotted brown;
+    width: 780px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carrossel_pai03{
+    border: 5px ridge brown;
+    width: 760px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carrossel_pai04{
+    background-color: white;
+    width: 760px;
+    height: 465px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.setaD{
+    width: 100px;
+    height: 75px;
+}
+.setaE{
+    width: 100px;
+    height: 75px;
+    transform: rotate(180deg); /* Rotaciona 180 graus */
+}
+
+.setaD:hover,.setaE:hover{
+    width: 150px;
+    height: 112.5px;
+    /* transition: transform 0.3s ease; */
+    background-color: whitesmoke;
+}
+#limpar_filtro{
+    border: 5px ridge chocolate;
+    background-color: burlywood;
+    width: 150px;
+    border-radius: 20px;
+}
+#limpar_filtro > i{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(5, 5, 82);
+}
+.ulcarrossel01{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    overflow: hidden;
+}
+
+.licarrossel01{
+    width: 400px;
+    height: 100%;
+
+}
+.imgcarrossel01{
+    width: 400px;
 }

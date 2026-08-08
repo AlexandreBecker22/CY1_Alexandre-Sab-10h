@@ -9,6 +9,7 @@ let IP02 = document.querySelector(".IP02")
 let IP03 = document.querySelector(".IP03")
 let link = document.querySelector("#link")
 let IMG01 = document.querySelector("#IMG01")
+let AUD01 = document.querySelector(".audio001")
 let lista_de_música = document.querySelector(".lista_de_música");
 let musicas = [];
 let audio01 = document.querySelector("audio001")
@@ -18,10 +19,15 @@ function Pegar_img() {
     const urlIMG = URL.createObjectURL(IMG01.files[0]);
     return urlIMG;
 }
+function Pegar_audio() {
+    const urlAUD01 = URL.createObjectURL(AUD01.files[0]);
+    return urlAUD01;
+}
 
 function Cadastrar_Jogo() {
     const urlImagem = Pegar_img();
-    const nova_musica = musica(IP01.value, IP02.value, IP03.value, link.value,  urlImagem);
+    const urlaudio = Pegar_audio();
+    const nova_musica = musica(IP01.value, IP02.value, IP03.value, link.value,  urlImagem, urlaudio );
     musicas.push(nova_musica);
 
 
@@ -40,6 +46,7 @@ function Cadastrar_Jogo() {
         <h4 class="h3h401" class="div01-C id= "H4-01"> ${musicas[i].IP02}  </h4>
         <h4 class="h3h401" class="div01-C id= "H4-02"> ${musicas[i].IP03}  </h4>
         <a class="h3h401" class="div01-C id="alink01" href="${musicas[i].link}"> Link da música </a>
+        <audio src= "${musicas[i].AUD01}" controls>
         <br>
         <button class="B02" onclick="Remover_Elementos(${i})">Remover Música</button>
         `
@@ -75,12 +82,13 @@ function Remover_Elementos(posicao_Array) {
 
 }
 
-const musica = (IP01, IP02, IP03, link, IMG01) => ({
+const musica = (IP01, IP02, IP03, link, IMG01, AUD01) => ({
     IP01,
     IP02,
     IP03, 
     link, 
-    IMG01
+    IMG01,
+    AUD01
 
 })
 
