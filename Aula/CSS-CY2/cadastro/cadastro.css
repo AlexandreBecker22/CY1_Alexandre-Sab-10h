@@ -110,8 +110,17 @@ h4{
     background-color: black;
     scale: 1.5;
 }
+.inputss1:focus{
+    /* background-color: brown; */
+    color: whitesmoke;
+    background-color: black;
+    scale: 1.5;
+}
 
 .inputss1:hover::placeholder{
+    color: whitesmoke;
+}
+.inputss1:focus::placeholder{
     color: whitesmoke;
 }
 .cad01{
@@ -199,6 +208,9 @@ input{
 .div_filtro input:hover::placeholder{
     color: whitesmoke;
 }
+.div_filtro input:focus::placeholder{
+    color: whitesmoke;
+}
 .div_filtro input:hover{
     background-color: black;
     scale: 1.5;
@@ -206,6 +218,12 @@ input{
 
 }
 
+.div_filtro input:focus{
+    background-color: black;
+    scale: 1.5;
+    color: whitesmoke;
+
+}
 .div_filtro > i{
     font-size: 20px;
 }

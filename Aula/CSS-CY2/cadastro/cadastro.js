@@ -88,7 +88,7 @@ const musica = (IP01, IP02, IP03, link, IMG01, AUD01) => ({
     IP03, 
     link, 
     IMG01,
-    AUD01
+    AUD01,
 
 })
 
