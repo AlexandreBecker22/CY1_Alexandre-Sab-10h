@@ -11,6 +11,7 @@
 <body>
     <header class="header01">
         <div class="p">
+            <b class="title01">Biblioteca Gamer 002</b>
             <ul class="pag">
                 <li class="signIn"><a href="./../HTML-/cadastro.html">Sign In</a></li>
                 <li class="signIn"><a href="./../HTML-/home.html">Home</a></li>
@@ -18,19 +19,40 @@
         </div>
     </header>
     <main>
-        <section class="inputnsds">
+        <div class="divinputs">
+            <section class="inputnsds">
+                <form>
 
-        <input type="text" placeholder="Preencha com seu usuário" class="senhaeusuario01" class="usuario01">
-        <br>
-        <input type="password" placeholder="Preencha com sua senha" class="senhaeusuario01" class="senha01">
-        <br>
-        <input type="date" placeholder="Insira sua data de nascimento" class="data01" class="senhaeusuario01">
-        <br>
-        <input onclick="CadastrarUsuario()" type="submit" value="Cadastrar" class="submit01">
-        </section>
+                    <label for="usuario01"><b>Nome de usuário:</b></label>
+                    <input type="text" placeholder="Preencha com seu usuário" class="senhaeusuario01" class="usuario01"
+                        required>
+                    <br>
+                    <label for="senha01"><b>Senha:</b></label>
+                    <input type="password" placeholder="Preencha com sua senha" class="senhaeusuario01" class="senha01"
+                        required>
+                    <ol>
+                        <li>A senha deve ter pelo menos uma letra maiúscula;</li>
+                        <li>A senha deve ter no minimo uma letra minúscula;</li>
+                        <li>A senha também deve conter um ou mais números;</li>
+                        <li>Ela não deve conter nem um caractere especial.</li>
+                    </ol>
+                    <br>
+                    <label for="email01"><b>E-mail:</b></label>
+                    <input type="email" placeholder="Preencha com seu e-mail" class="senhaeusuario01" class="email01"
+                        required>
+                    <br>
+                    <label for="data01"><b>Data de nascimento:</b></label><b>(opcional)</b>
+                    <input type="date" placeholder="Insira sua data de nascimento" class="data01"
+                        class="senhaeusuario01">
+                    <br>
+                </form>
+                <input onclick="CadastrarUsuario()" type="submit" value="Cadastrar" class="submit01">
+
+            </section>
+        </div>
     </main>
     <footer></footer>
-    <script src="./../Java/cadastro.js"></script>
+    <script src="./../../Biblioteca_de_jogos-CY2/Java/cadastro.js"></script>
 </body>
 
 </html>

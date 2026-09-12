@@ -1,4 +1,4 @@
-.signIn{
+.signIn {
     list-style-type: none;
     width: 100%;
     display: flex;
@@ -6,7 +6,8 @@
     align-items: center;
     flex-direction: row;
 }
-header ul{
+
+header ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +17,8 @@ header ul{
     background-color: black;
     margin: 10px;
 }
-.signIn a{
+
+.signIn a {
     text-decoration: none;
     color: white;
     font-style: italic;
@@ -28,15 +30,17 @@ header ul{
     border: ridge gray 10px;
     width: 100px;
     border-radius: 50px;
-    
+
 
 }
-.header01{
+
+.header01 {
     background-color: rgb(2, 2, 107);
     border-bottom: solid black 10px;
 }
 
-.senhaeusuario01, .data01{
+.senhaeusuario01,
+.data01 {
     text-decoration: none;
     border: solid 2px gray;
     border-radius: 50px;
@@ -47,13 +51,53 @@ header ul{
     align-items: center;
     flex-direction: column;
 }
-.inputnsds{
-    background-color: blue;
+
+.inputnsds {
+    background-color: rgb(84, 84, 248);
     border-radius: 50px;
-    border: ridge 2px gray;
+    border: ridge 10px gray;
     margin: 10px;
     padding: 10px;
     width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px;
+}
+
+.divinputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divinputs form {
+    padding: 10px;
+}
+
+.inputnsds label {
+    color: white;
+    font-style: italic;
+    text-decoration: double;
+    font-weight: 100px;
+}
+
+.inputnsds input {
+    width: 275px;
+}
+
+.inputnsds input::focus {
+    width: 325px;
+}
+
+.title01 {
+    color: whitesmoke;
+    font-style: italic;
+    font-weight: 400px;
+    font-size: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
