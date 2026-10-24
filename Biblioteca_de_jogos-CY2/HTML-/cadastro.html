@@ -23,18 +23,18 @@
             <section class="inputnsds">
                 <form>
 
-                    <label for="usuario01"><b>Nome de usuário:</b></label>
-                    <input type="text" placeholder="Preencha com seu usuário" class="senhaeusuario01" class="usuario01"
+                    <label for="usuario01"><b>Nome de usuario:</b></label>
+                    <input type="text" placeholder="Preencha com seu usuario" class="senhaeusuario01" class="usuario01"
                         required>
                     <br>
                     <label for="senha01"><b>Senha:</b></label>
                     <input type="password" placeholder="Preencha com sua senha" class="senhaeusuario01" class="senha01"
                         required>
                     <ol>
-                        <li>A senha deve ter pelo menos uma letra maiúscula;</li>
-                        <li>A senha deve ter no minimo uma letra minúscula;</li>
-                        <li>A senha também deve conter um ou mais números;</li>
-                        <li>Ela não deve conter nem um caractere especial.</li>
+                        <li>A senha deve ter pelo menos uma letra maiuscula;</li>
+                        <li>A senha deve ter no minimo uma letra minuscula;</li>
+                        <li>A senha tambem deve conter um ou mais numeros;</li>
+                        <li>Ela nao deve conter nem um caractere especial.</li>
                     </ol>
                     <br>
                     <label for="email01"><b>E-mail:</b></label>
@@ -45,6 +45,9 @@
                     <input type="date" placeholder="Insira sua data de nascimento" class="data01"
                         class="senhaeusuario01">
                     <br>
+                    <div id="mensagem"></div>
+                    <input type="submit" onclick="CadastrarUsuario()"
+                    id="botaoCadastrar">
                 </form>
                 <input onclick="CadastrarUsuario()" type="submit" value="Cadastrar" class="submit01">
 
